@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>OverRank</title>
+</head>
+
+<body data-spy="scroll" data-target="#nav1">
+    <div class="container">
+        <br>
+        <header>
+            <nav class="navbar navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type=button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav1">
+                            <span class="sr-only">Menu</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">OverRank</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="nav1">
+                        <ul class="nav navbar-nav navbar-right" role="tablist">
+                            <li class="active"><a href="#sec1">Inicio</a></li>
+                            <li><a href="#sec2">Novedades</a></li>
+                            <li><a href="#sec3">Streams</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="col-md-12" id="sec1">
+            <div class="imgsup">
+                <div class="campo">
+                    <input class="form-control" type="text" placeholder="Battletag" name="battletag" />
+                    <select class="form-control" name="region">
+                        <option>Region</option>
+                        <option value="us">US</option>
+                        <option value="as">AS</option>
+                        <option value="oc">OC</option>
+                    </select>
+                    <select class="form-control" name="stats">
+                        <option value="competitive">Competitive Stats</option>
+                        <option value="overall_stats">--Overall Stats--</option>
+                        <option value="win_rate">Win Rate</option>
+                        <option value="level">Level</option>
+                        <option value="loses">Losses</option>
+                    </select>
+                    <button id="search" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                        Buscar</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">OverRank</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="title">
+                                    <h2 id="battle-tag"></h2>
+                                </div>
+                                <div class="avatar">
+                                    <img id="profile-image" src="" alt="Profile picture">
+                                </div>
+                                <div class="stats">
+                                    <ul id="stats-list">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modal -->
+            </div>
+        </div>
+        <div class="main row">
+            <article class=" col-xs-12 col-sm-6 col-md-6 col-lg-">
+                <div class="sec">
+                    <h2 class="titulosec1-1">OVERWATCH LEAGUE</h2>
+                    <a href="#"><img src="http://media.comicbook.com/2017/07/wwgoverwatchleaguemlb1-1010844.jpg" class="img-responsive" alt=""></a>
+                    <p>El cometido de la Overwatch League es obsequiar a los fans con la oportunidad de convertirse en campeones dentro de un ecosistema profesional de esports que reconoce la pasión y recompensa la excelencia.</p>
+                </div>
+            </article>
+            <article class=" col-xs-12 col-sm-6 col-md-6 col-lg-">
+                <div class="sec">
+                    <h2 class="titulosec1-2">OVERWATCH STREAMS</h2>
+                    <img src="https://tctechcrunch2011.files.wordpress.com/2015/10/twitch-logo.png" class="img-responsive" alt="">
+                    <p>Encuentra y mira aquí a los mejores jugadores de las últimas temporadas y aprende de sus estrategias.</p>
+                </div>
+            </article>
+        </div>
+        <br>
+        <div class="ownot" id="sec2">
+            <h2 class="noticias">NOVEDADES DE OVERWATCH<h2>
+        </div>
+        
+        <div class="container galeria-con">
+
+    
+    <div class="galeria-row">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./img/noticia1.jpg">
+                        <img src="./img/noticia1.jpg" alt="">
+                    </a>
+                    <div class="contenido">
+                        <h3>Notas del Parche</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./img/noticia2.png">
+                        <img src="./img/noticia2.png" alt="">
+                    </a>
+                    <div class="contenido">
+                        <h3>La copa ha comenzado</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./img/noticia3.jpg">
+                        <img src="./img/noticia3.jpg" alt="">
+                    </a>
+                    <div class="contenido">
+                        <h3>La Blizzcon ha comenzado</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./img/noticia11.jpg">
+                        <img src="./img/noticia11.jpg" alt="">
+                    </a>
+                    <div class="contenido">
+                        <h3>Nuevo Heroe:Moira</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./img/noticia9.jpg">
+                        <img src="./img/noticia9.jpg" alt="">
+                    </a>
+                    <div class="contenido">
+                        <h3>Nuevos cambios en el PTR</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="./img/noticia10.jpg">
+                        <img src="./img/noticia10.jpg" alt="">
+                    </a>
+                    <div class="contenido">
+                        <h3>Posible Nerf de Mercy</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+        <div class="ownot" id="sec3">
+            <h2 class="noticias">STREAMERS <h2>
+        </div>
+
+<div class="container">
+    <div class="informacion" >
+        <div class="seagull" id="piz">
+        <img src="http://overwatch-pro-settings.com/wp-content/uploads/2017/04/Seagull-224x300.jpg" alt="" class="img-responsive pull-left" id="pimg">
+        <p id="trd">Brandon "Seagull" Larned es un jugador de Overwatch profesional Norte Americano del equipo NRG de los ESports, y sin dudas el jugador de Overwatch en estos momentos. Creador de un equipo profesional de Team Fortress 2, Seagull es un veteranos en los ESports su conocimiento es extremadamente valiosa para los jugadores que quieren mejorar en el juego. Con su actual cronograma de torneos, el no ha hecho tantos streams como solia hacerlo, pero vale la pena seguirlo cuando lo hace.
+</p>
+       </div>
+       <br>
+       <br>
+       <div class="adam" id="pder">
+           <img src="http://overwatch-pro-settings.com/wp-content/uploads/2017/04/Adam.jpeg" class="img-responsive pull-right" alt="" id="pimd" id="pimd">
+           <p id="trd">El jugador de soportes del C9 Adam Eckel es un 'Main' Mercy quien hace Stream en Twitch, aunque el no tiene un horario.También juega generalmente con Ana pero el "Meta" actual de Mercy destaca más; él es increiblemente bueno con ella, haciendola viable en cualquier situación. El Stream de Adam es mas calmado que otros Streamers. No es un gran comentarista en sus Streams, él prefiere relajarse y escuchar un poco de música.
+ De igual forma, hay mucho que aprender, como en que momento jugar un determinado Heroe de soporte.</p>
+       </div>
+       <br>
+       <br>
+       <div class="timthetatman" id="piz" >
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI_C_jaDdlewDClVCVV-waNc542a2-PXZ_BfZWdrOXovSIKlzn" alt="" class="img-responsive pull-left"  id="pimg">
+           <p id="trd">Cuando preguntan quien es uno de los Tops Streamers de Overwatch en Twitch, usualemnte podrán decir que TimTheTatman. Él es un Streamer a tiempo completo que usualemnte juega con otros Streamers grandes como MoonMoon. MoonMoon, tiene un horario consistente, lo cual es parte de su popularidad. Él está cuando tu esperes que estará, de Domingo a Miercoles. TimTheTatman juega con varios Heroes, pero más que nada lo verás jugando con Genji, McCree, Pharah y Tracer. </p>
+       </div>
+        <br>
+       <br>
+       </div>
+</div>
+</div>
+    </div>
+    </div>
+    </div>
+        <footer id="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Media</h5>
+                    <ul>
+                        <li><a href="#">Descarga</a></li>
+                        <li><a href="#">Noticias</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Acerca de</h5>
+                    <ul>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Direccion</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Soporte</h5>
+                    <ul>
+                        <li><a href="#">Informacion</a></li>
+                        <li><a href="#">F.A.Q</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 info">
+                    <h5>Informacion</h5>
+                    <p> OverRank es un Página orientada a la parte competitiva del juego, asi como también noticias e inforamción acerca de los Jugadores más calificados</p>
+                </div>
+            </div>
+        </div>
+        <div class="segundabarra">
+           <div class="container">
+                <h2 class="logo"><a href="#sec1"> OverRank </a></h2>
+            <div class="social-icons">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/request.js"></script>
+</body>
+
+</html>
