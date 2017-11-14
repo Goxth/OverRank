@@ -17,6 +17,7 @@ function makeRequest(battletag, region, stat) {
         var response = data;
         var overallStats = response[region].stats.competitive.overall_stats;
         $('#profile-image').attr('src', overallStats.avatar);
+        $('#stats-list').empty();
          
         if (stat === 'competitive') {
             $('#stats-list').append('<li><strong>Win Rate: </strong> ' + overallStats.win_rate + ' </li>');
